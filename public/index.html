@@ -2,11 +2,30 @@
 <html lang="en">
      <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <title>Simple Web Server</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Message Board</title>
     </head> 
 
     <body>
-        <h1>Hello SIT725</h1> 
+        <h1>SIT725 - The Message Board (Prac4)</h1> 
+
+        <div class="row">
+            <div class="input-field col s6">
+              <input value="" id="messageBox" type="text" class="validate">
+              <label class="active" for="messageBox">Message</label>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn" id="btnMessage">Post the Message</a>
+        <h3>Messages</h3> 
+        <ul class="collection" id="messageList">
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="env.js"></script>
     </body> 
 
 </html>
